@@ -15,3 +15,11 @@ test("Find the plant", function() {
   var output = findTheNeedle(words, "plant");
   expect(output).toEqual(expected);
 });
+
+test("Find the plant if it doesn't exist", function() {
+  var words = [ "shelf", "arrow", "bird"];
+  var expected = false;
+
+  var output = findTheNeedle(words, "plant");
+  expect(output).toEqual(expected);
+});
