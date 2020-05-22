@@ -8,6 +8,14 @@
 // calculate and return the factorial of int
 // note: factorial of 0 is 1
 
-function factorial(int) {}
+function factorial(int) {
+    let result = 1;
+    if (int>0) {
+        for (let i=1;i<int+1;i++) {
+            result*=i;
+        };
+    };
+    return result; 
+}
 
 module.exports = factorial;
